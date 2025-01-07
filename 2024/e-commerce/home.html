@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Main - E-commerce</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20241222175523">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header data-scroll class="header">
+			<div data-lp class="header__banner banner-header">
+				<div class="banner-header__container">
+					<div class="banner-header__text">
+						Sign up and get 20% off to your first order.
+						<a href="#">Sign Up Now</a>
+					</div>
+					<button type="button" class="banner-header__close --icon-crosshair"></button>
+				</div>
+			</div>
+			<div data-lp class="header__main main-header">
+				<div class="main-header__container">
+					<button type="button" class="main-header__icon icon-menu"><span></span></button>
+					<a data-goto=".wrapper" aria-label="Go to main page" href="#" class="main-header__logo">
+						<img src="img/logo.svg" alt="SHOP.CO">
+					</a>
+					<nav class="main-header__menu menu">
+						<ul class="menu__list">
+							<li data-spoller-block="767.98,max" class="menu__item">
+								<div class="menu__title">
+									<a href="catalog.html" class="menu__link">Shop</a>
+									<button tabindex="-1" data-spoller-trigger type="button" class="menu__button"></button>
+								</div>
+								<div data-spoller-content class="menu__wrapper">
+									<ul class="menu__sub-list">
+										<li class="menu__sub-item">
+											<a href="#" class="menu__sub-link">Sub link</a>
+										</li>
+										<li class="menu__sub-item">
+											<a href="#" class="menu__sub-link">Sub link</a>
+										</li>
+										<li class="menu__sub-item">
+											<a href="#" class="menu__sub-link">Sub link</a>
+										</li>
+										<li class="menu__sub-item">
+											<a href="#" class="menu__sub-link">Sub link</a>
+										</li>
+									</ul>
+								</div>
+							</li>
+							<li class="menu__item">
+								<a href="#" data-goto-header data-goto=".top-selling" class="menu__link">on sale</a>
+							</li>
+							<li class="menu__item">
+								<a href="#" data-goto-header data-goto=".arrivals__cloth" class="menu__link">New Arrivals</a>
+							</li>
+							<li class="menu__item">
+								<a href="#" data-goto-header data-goto=".style" class="menu__link">Brands</a>
+							</li>
+						</ul>
+					</nav>
+					<form action="#" class="main-header__form form-main-header">
+						<input minlength="3" required placeholder="Search for products..." name="form[search]" type="search" class="form-main-header__input input input--grey">
+						<button aria-label="Start searching products" type="submit" class="form-main-header__submit --icon-search"></button>
+					</form>
+					<div class="main-header__actions">
+						<button type="button" class="main-header__link main-header__link--search">
+							<span class="--icon-search"></span>
+							<span class="--icon-crosshair"></span>
+						</button>
+						<a href="cart.html" class="main-header__link --icon-cart"></a>
+						<a href="#" class="main-header__link --icon-account"></a>
+					</div>
+				</div>
+			</div>
+		</header>
+		<main class="page">
+			<section class="promo">
+				<div class="promo__container">
+					<div class="promo__content">
+						<h1 class="promo__title title title--main">
+							FIND CLOTHES THAT MATCHES YOUR STYLE
+						</h1>
+						<div class="promo__text text">
+							<p>
+								Browse through our diverse range of meticulously crafted garments, designed to bring out your individuality and cater to your sense of style.
+							</p>
+						</div>
+						<a href="#" class="promo__link button button--fw">shop now</a>
+						<div class="promo__info info-promo">
+							<div class="info-promo__item">
+								<div class="info-promo__value">200+</div>
+								<div class="info-promo__label">International Brands</div>
+							</div>
+							<div class="info-promo__item">
+								<div class="info-promo__value">2,000+</div>
+								<div class="info-promo__label">High-Quality Products</div>
+							</div>
+							<div class="info-promo__item">
+								<div class="info-promo__value">30,000+</div>
+								<div class="info-promo__label">Happy Customers</div>
+							</div>
+						</div>
+					</div>
+					<div class="promo__picture">
+						<img src="img/promo/decoration.svg" alt="#" class="promo__decoration promo__decoration--small">
+						<img src="img/promo/decoration.svg" alt="#" class="promo__decoration">
+						<img src="img/promo/promo.webp" alt="#" class="promo__img">
+					</div>
+				</div>
+			</section>
+			<div class="partners">
+				<div class="partners__container">
+					<img src="img/partners/01.svg" alt="partner" class="partners__item">
+					<img src="img/partners/02.svg" alt="partner" class="partners__item">
+					<img src="img/partners/03.svg" alt="partner" class="partners__item">
+					<img src="img/partners/04.svg" alt="partner" class="partners__item">
+					<img src="img/partners/05.svg" alt="partner" class="partners__item">
+				</div>
+			</div>
+			<section id="arrivals" class="arrivals__cloth block-cloth">
+				<div class="block-cloth__container">
+					<h2 class="block-cloth__title title title--center">NEW ARRIVALS</h2>
+					<div class="block-cloth__items">
+						<article class="block-cloth__card card-product">
+							<a href="#" class="card-product__img">
+								<img src="img/products/01.webp" alt="t-shirt with Tape details">
+							</a>
+							<h3 class="card-product__title"><a href="#">t-shirt with Tape details</a></h3>
+							<div data-rating-size="17" data-rating-value data-rating="4.5" class="card-product__rating rating"></div>
+							<div class="card-product__prices prices">
+								<div class="prices__current-price">$120</div>
+							</div>
+						</article>
+						<article class="block-cloth__card card-product">
+							<a href="#" class="card-product__img">
+								<img src="img/products/02.webp" alt="skinny fit jeans">
+							</a>
+							<h3 class="card-product__title"><a href="#">skinny fit jeans</a></h3>
+							<div data-rating-size="17" data-rating-value data-rating="3.5" class="card-product__rating rating"></div>
+							<div class="card-product__prices prices">
+								<div class="prices__current-price">$120</div>
+								<div class="prices__old-price">$260</div>
+								<div class="prices__discount">-20%</div>
+							</div>
+						</article>
+						<article class="block-cloth__card card-product">
+							<a href="#" class="card-product__img">
+								<img src="img/products/03.webp" alt="checkered shirt">
+							</a>
+							<h3 class="card-product__title"><a href="#">checkered shirt</a></h3>
+							<div data-rating-size="17" data-rating-value data-rating="5" class="card-product__rating rating"></div>
+							<div class="card-product__prices prices">
+								<div class="prices__current-price">$180</div>
+							</div>
+						</article>
+						<article class="block-cloth__card card-product">
+							<a href="#" class="card-product__img">
+								<img src="img/products/04.webp" alt="sleeve striped t-shirt">
+							</a>
+							<h3 class="card-product__title"><a href="#">sleeve striped t-shirt</a></h3>
+							<div data-rating-size="17" data-rating-value data-rating="4.5" class="card-product__rating rating"></div>
+							<div class="card-product__prices prices">
+								<div class="prices__current-price">$130</div>
+								<div class="prices__old-price">$160</div>
+								<div class="prices__discount">-30%</div>
+							</div>
+						</article>
+					</div>
+					<button type="button" class="block-cloth__all button button--bg-white button--fw button--border">View All</button>
+				</div>
+			</section>
+			<section id="top-selling" class="top-selling block-cloth">
+				<div class="block-cloth__container">
+					<h2 class="block-cloth__title title title--center">top selling</h2>
+					<div class="block-cloth__items">
+						<article class="block-cloth__card card-product">
+							<a href="#" class="card-product__img">
+								<img src="img/products/05.webp" alt="vertical striped shirt">
+							</a>
+							<h3 class="card-product__title"><a href="#">vertical striped shirt</a></h3>
+							<div data-rating-size="17" data-rating="5" data-rating-value class="card-product__rating rating"></div>
+							<div class="card-product__prices prices">
+								<div class="prices__current-price">$212</div>
+								<div class="prices__old-price">$232</div>
+								<div class="prices__discount">-20%</div>
+							</div>
+						</article>
+						<article class="block-cloth__card card-product">
+							<a href="#" class="card-product__img">
+								<img src="img/products/06.webp" alt="courage graphic t-shirt">
+							</a>
+							<h3 class="card-product__title"><a href="#">courage graphic t-shirt</a></h3>
+							<div data-rating-size="17" data-rating="4" data-rating-value class="card-product__rating rating"></div>
+							<div class="card-product__prices prices">
+								<div class="prices__current-price">$145</div>
+							</div>
+						</article>
+						<article class="block-cloth__card card-product">
+							<a href="#" class="card-product__img">
+								<img src="img/products/07.webp" alt="loose fit bermuda shorts">
+							</a>
+							<h3 class="card-product__title"><a href="#">loose fit bermuda shorts</a></h3>
+							<div data-rating-size="17" data-rating="3" data-rating-value class="card-product__rating rating"></div>
+							<div class="card-product__prices prices">
+								<div class="prices__current-price">$80</div>
+							</div>
+						</article>
+						<article class="block-cloth__card card-product">
+							<a href="#" class="card-product__img">
+								<img src="img/products/08.webp" alt="faded skinny jeans">
+							</a>
+							<h3 class="card-product__title"><a href="#">faded skinny jeans</a></h3>
+							<div data-rating-size="17" data-rating="4.5" data-rating-value class="card-product__rating rating"></div>
+							<div class="card-product__prices prices">
+								<div class="prices__current-price">$210</div>
+							</div>
+						</article>
+					</div>
+					<button type="button" class="block-cloth__all button button--bg-white button--fw button--border">View All</button>
+				</div>
+			</section>
+			<section id="style" class="style">
+				<div class="style__container">
+					<div class="style__body">
+						<h2 class="style__title title title--center">BROWSE BY dress STYLE</h2>
+						<div class="style__items">
+							<div class="style__card cart-style">
+								<h4 class="cart-style__title">Casual</h4>
+								<img src="img/dress-style/01.webp" alt="Casual" class="cart-style__img">
+							</div>
+							<div class="style__card cart-style">
+								<h4 class="cart-style__title">Formal</h4>
+								<img src="img/dress-style/02.webp" alt="Formal" class="cart-style__img">
+							</div>
+							<div class="style__card cart-style">
+								<h4 class="cart-style__title">Party</h4>
+								<img src="img/dress-style/03.webp" alt="Party" class="cart-style__img">
+							</div>
+							<div class="style__card cart-style">
+								<h4 class="cart-style__title">Gym</h4>
+								<img src="img/dress-style/04.webp" alt="Gym" class="cart-style__img">
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="reviews">
+				<div class="reviews__container">
+					<div class="reviews__block block-header">
+						<h2 class="block-header__title title">OUR HAPPY CUSTOMERS</h2>
+						<div class="block-header__navigation">
+							<button type="button" class="block-header__button block-header__button--prev --icon-arrow-navigation"></button>
+							<button type="button" class="block-header__button block-header__button--next --icon-arrow-navigation"></button>
+						</div>
+					</div>
+					<div class="reviews__slider swiper">
+						<div class="reviews__wrapper swiper-wrapper">
+							<div class="reviews__slide swiper-slide">
+								<article class="item-review">
+									<div class="item-review__header">
+										<div data-rating-size="21" data-rating="4.5" class="item-review__rating rating rating--big"></div>
+									</div>
+									<h6 class="item-review__user">Samantha <span class="--icon-trust">D.</span></h6>
+									<div class="item-review__text text">
+										<p>
+											"I'm blown away by the quality and style of the clothes I received from Shop.co. From casual wear to elegant dresses, every piece I've bought has exceeded my expectations.”
+										</p>
+									</div>
+								</article>
+							</div>
+							<div class="reviews__slide swiper-slide">
+								<article class="item-review">
+									<div class="item-review__header">
+										<div data-rating-size="21" data-rating="4.5" class="item-review__rating rating rating--big"></div>
+									</div>
+									<h6 class="item-review__user">Samantha <span class="--icon-trust">D.</span></h6>
+									<div class="item-review__text text">
+										<p>
+											"I'm blown away by the quality and style of the clothes I received from Shop.co. From casual wear to elegant dresses, every piece I've bought has exceeded my expectations.”
+										</p>
+									</div>
+								</article>
+							</div>
+							<div class="reviews__slide swiper-slide">
+								<article class="item-review">
+									<div class="item-review__header">
+										<div data-rating-size="21" data-rating="4.5" class="item-review__rating rating rating--big"></div>
+									</div>
+									<h6 class="item-review__user">Samantha <span class="--icon-trust">D.</span></h6>
+									<div class="item-review__text text">
+										<p>
+											"Finding clothes that align with my personal style used to be a challenge until I discovered Shop.co. The range of options they offer is truly remarkable, catering to a variety of tastes and occasions.”
+										</p>
+									</div>
+								</article>
+							</div>
+							<div class="reviews__slide swiper-slide">
+								<article class="item-review">
+									<div class="item-review__header">
+										<div data-rating-size="21" data-rating="4.5" class="item-review__rating rating rating--big"></div>
+									</div>
+									<h6 class="item-review__user">Samantha <span class="--icon-trust">D.</span></h6>
+									<div class="item-review__text text">
+										<p>
+											"As someone who's always on the lookout for unique fashion pieces, I'm thrilled to have stumbled upon Shop.co. The selection of clothes is not only diverse but also on-point with the latest trends.”
+										</p>
+									</div>
+								</article>
+							</div>
+							<div class="reviews__slide swiper-slide">
+								<article class="item-review">
+									<div class="item-review__header">
+										<div data-rating-size="21" data-rating="4.5" class="item-review__rating rating rating--big"></div>
+									</div>
+									<h6 class="item-review__user">Samantha <span class="--icon-trust">D.</span></h6>
+									<div class="item-review__text text">
+										<p>
+											"As someone who's always on the lookout for unique fashion pieces, I'm thrilled to have stumbled upon Shop.co. The selection of clothes is not only diverse but also on-point with the latest trends.”
+										</p>
+									</div>
+								</article>
+							</div>
+							<div class="reviews__slide swiper-slide">
+								<article class="item-review">
+									<div class="item-review__header">
+										<div data-rating-size="21" data-rating="4.5" class="item-review__rating rating rating--big"></div>
+									</div>
+									<h6 class="item-review__user">Samantha <span class="--icon-trust">D.</span></h6>
+									<div class="item-review__text text">
+										<p>
+											"I absolutely love this t-shirt! The design is unique and the fabric feels so comfortable. As a fellow designer, I appreciate the attention to detail. It's become my favorite go-to shirt."
+										</p>
+									</div>
+								</article>
+							</div>
+							<div class="reviews__slide swiper-slide">
+								<article class="item-review">
+									<div class="item-review__header">
+										<div data-rating-size="21" data-rating="4.5" class="item-review__rating rating rating--big"></div>
+									</div>
+									<h6 class="item-review__user">Samantha <span class="--icon-trust">D.</span></h6>
+									<div class="item-review__text text">
+										<p>
+											"I absolutely love this t-shirt! The design is unique and the fabric feels so comfortable. As a fellow designer, I appreciate the attention to detail. It's become my favorite go-to shirt."
+										</p>
+									</div>
+								</article>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="subscribe subscribe--mb">
+				<div class="subscribe__container">
+					<div class="subscribe__body">
+						<h2 class="subscribe__title title title--small title--color-white">STAY UPTO DATE ABOUT OUR LATEST OFFERS</h2>
+						<form data-dev action="#" method="POST" class="subscribe__form form">
+							<input type="text" name="form[email]" data-required="email" data-error="Not correct email" placeholder="E-mail" class="form__input input">
+							<button type="submit" class="form__button button button--bg-white">Subscribe to Newsletter</button>
+						</form>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="footer__main main-footer">
+				<div class="main-footer__container">
+					<div class="main-footer__body">
+						<a href="#" class="main-footer__logo">
+							<img src="img/logo.svg" alt="SHOP.CO">
+						</a>
+						<div class="main-footer__text text">
+							<p>
+								We have clothes that suits your style and which you’re proud to wear. From women to men.
+							</p>
+						</div>
+						<ul class="main-footer__social socials">
+							<li class="socials__item">
+								<a href="#" aria-label="Go to our twitter" target="_blank" class="socials__link --icon-twitter"></a>
+							</li>
+							<li class="socials__item">
+								<a href="#" aria-label="Go to our facebook" target="_blank" class="socials__link --icon-facebook"></a>
+							</li>
+							<li class="socials__item">
+								<a href="#" aria-label="Go to our instagram" target="_blank" class="socials__link --icon-instagram"></a>
+							</li>
+							<li class="socials__item">
+								<a href="#" aria-label="Go to our gitHub" target="_blank" class="socials__link --icon-gitHub"></a>
+							</li>
+						</ul>
+					</div>
+					<div class="main-footer__menu menu-footer">
+						<div class="menu-footer__column">
+							<h5 class="menu-footer__title">Company</h5>
+							<ul class="menu-footer__list">
+								<li class="menu-footer__item"><a href="#" class="menu-footer__link">About</a></li>
+								<li class="menu-footer__item"><a href="#" class="menu-footer__link">Features</a></li>
+								<li class="menu-footer__item"><a href="#" class="menu-footer__link">Works</a></li>
+								<li class="menu-footer__item"><a href="#" class="menu-footer__link">Career</a></li>
+							</ul>
+						</div>
+						<div class="menu-footer__column">
+							<h5 class="menu-footer__title">Help</h5>
+							<ul class="menu-footer__list">
+								<li class="menu-footer__item"><a href="#" class="menu-footer__link">Customer Support</a></li>
+								<li class="menu-footer__item"><a href="#" class="menu-footer__link">Delivery Details</a></li>
+								<li class="menu-footer__item"><a href="#" class="menu-footer__link">Terms & Conditions</a></li>
+								<li class="menu-footer__item"><a href="#" class="menu-footer__link">Privacy Policy</a></li>
+							</ul>
+						</div>
+						<div class="menu-footer__column">
+							<h5 class="menu-footer__title">faq</h5>
+							<ul class="menu-footer__list">
+								<li class="menu-footer__item"><a href="#" class="menu-footer__link">Account</a></li>
+								<li class="menu-footer__item"><a href="#" class="menu-footer__link">Manage Deliveries</a></li>
+								<li class="menu-footer__item"><a href="#" class="menu-footer__link">Orders</a></li>
+								<li class="menu-footer__item"><a href="#" class="menu-footer__link">Payments</a></li>
+							</ul>
+						</div>
+						<div class="menu-footer__column">
+							<h5 class="menu-footer__title">Resources</h5>
+							<ul class="menu-footer__list">
+								<li class="menu-footer__item"><a href="#" class="menu-footer__link">Free eBooks</a></li>
+								<li class="menu-footer__item"><a href="#" class="menu-footer__link">Development Tutorial</a></li>
+								<li class="menu-footer__item"><a href="#" class="menu-footer__link">How to - Blog</a></li>
+								<li class="menu-footer__item"><a href="#" class="menu-footer__link">Youtube Playlist</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="footer__bottom bottom-footer">
+				<div class="bottom-footer__container">
+					<div class="bottom-footer__copy">Shop.co © 2000-2023, All Rights Reserved</div>
+					<ul class="bottom-footer__payments payments">
+						<li class="payments__item">
+							<img src="img/payment/visa.svg" alt="Visa">
+						</li>
+						<li class="payments__item">
+							<img src="img/payment/mastercard.svg" alt="Mastercard">
+						</li>
+						<li class="payments__item">
+							<img src="img/payment/paypal.svg" alt="PayPal">
+						</li>
+						<li class="payments__item">
+							<img src="img/payment/apple-pay.svg" alt="ApplePay">
+						</li>
+						<li class="payments__item">
+							<img src="img/payment/google-pay.svg" alt="GooglePay">
+						</li>
+					</ul>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<script src="js/app.min.js?_v=20241222175523"></script>
+</body>
+
+</html>

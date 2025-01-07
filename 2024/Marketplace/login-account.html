@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Login Acount</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20241217192124">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header data-scroll class="header">
+			<div class="header__content">
+				<a href="home.html" class="header__logo">
+					<img src="img/logo.svg" alt="Logo NFT Marketplace">
+				</a>
+				<nav class="header__menu menu">
+					<ul class="menu__list">
+						<li class="menu__item"><a href="marketplace.html" class="menu__link">Marketplace</a></li>
+						<li class="menu__item"><a href="rankings.html" class="menu__link">Rankings</a></li>
+						<li class="menu__item"><a href="connect-wallet.html" class="menu__link">Connect a wallet</a></li>
+					</ul>
+				</nav>
+				<div class="header__actions">
+					<a data-da=".header__menu,430" href="create-account.html" class="header__link link _icon-user">Sign Up</a>
+					<button type="button" class="header__icon icon-menu"><span></span></button>
+				</div>
+			</div>
+		</header>
+		<main class="login">
+			<section class="login__account account-block">
+				<div class="account-block__content">
+					<div class="account-block__img">
+						<img src="img/create-account.webp" class="ibg" alt="Image">
+					</div>
+					<div class="account-block__body">
+						<h1 class="account-block__title title title--fz-50">Login account</h1>
+						<div class="account-block__text text">
+							<p>
+								Welcome back! Log in to access your account and continue your journey with NFTs.
+							</p>
+						</div>
+						<form data-dev class="account-block__form form" action="files/sendmail/sendmail.php" method="POST">
+							<div class="form__wrap-input input _icon-email">
+								<input data-required="email" type="text" name="form[email]" data-error="Not the right email!" placeholder="Email Address" class="input">
+							</div>
+							<div class="form__wrap-input input _icon-password">
+								<input data-required="password" type="password" name="form[password]" data-error="Error" placeholder="Password" class="viewpass">
+								<button aria-label="show password" type="button" class="form__viewpass">
+									<span class="_icon-eye"></span>
+									<span class="_icon-eye-close"></span>
+								</button>
+							</div>
+							<button type="submit" class="account-block__button button button--fw">Login</button>
+						</form>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="footer__top top-footer">
+				<div class="top-footer__content">
+					<div class="top-footer__body body-footer">
+						<a href="#" aria-label="Go to top page" class="body-footer__logo">
+							<img src="img/logo.svg" alt="Logo NFT Marketplace">
+						</a>
+						<div class="body-footer__text text text--small">
+							<p>
+								NFT marketplace UI created with Anima for Figma.
+							</p>
+						</div>
+						<div class="body-footer__join text text--small">Join our community</div>
+						<ul class="body-footer__social social">
+							<li class="social__item">
+								<a href="#" target="_blank" aria-label="go to our discord channel" class="social__link _icon-discord"></a>
+							</li>
+							<li class="social__item">
+								<a href="#" target="_blank" aria-label="go to our youtube channel" class="social__link _icon-youtube"></a>
+							</li>
+							<li class="social__item">
+								<a href="#" target="_blank" aria-label="go to our twitter" class="social__link _icon-twitter"></a>
+							</li>
+							<li class="social__item">
+								<a href="#" target="_blank" aria-label="go to our instagram" class="social__link _icon-instagram"></a>
+							</li>
+						</ul>
+					</div>
+					<div class="top-footer__column">
+						<h4 class="top-footer__title">Explore</h4>
+						<ul class="top-footer__list list-footer">
+							<li class="list-footer__item">
+								<a href="marketplace.html" class="list-footer__link">Marketplace</a>
+							</li>
+							<li class="list-footer__item">
+								<a href="rankings.html" class="list-footer__link">Rankings</a>
+							</li>
+							<li class="list-footer__item">
+								<a href="connect-wallet.html" class="list-footer__link">Connect a wallet</a>
+							</li>
+						</ul>
+					</div>
+					<div class="top-footer__column">
+						<h4 class="top-footer__title">Join our weekly digest</h4>
+						<div class="top-footer__text top-footer__text--wl text text--small">
+							<p>
+								Get exclusive promotions &amp; updates straight to your inbox.
+							</p>
+						</div>
+						<form data-dev class="top-footer__form form form--flex" action="files/sendmail/sendmail.php" method="POST">
+							<div class="form__wrap-input input input--h-60">
+								<input type="text" data-required="email" name="email" data-error-hide data-error="Not correct email!" placeholder="Enter your email here">
+							</div>
+							<button type="submit" class="form__button button _icon-email">Subscribe</button>
+						</form>
+					</div>
+				</div>
+			</div>
+			<div class="footer__bottom bottom-footer">
+				<div class="bottom-footer__container">
+					<div class="bottom-footer__copyright">Ⓒ NFT Market. Use this template freely.</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<!-- Документація: https://template.fls.guru/template-docs/modul-preloader.html -->
+	<div id="fls-preloader">
+		<!-- Скріпт прелоадера -->
+		<script>
+			function preloader() {
+				const preloaderImages = document.querySelector('[data-preloader]') ? document.querySelectorAll('[data-preloader] img') : document.querySelectorAll('img');
+				const preloaderContainer = document.querySelector('#fls-preloader');
+				if (preloaderImages.length) {
+					const preloaderStyleTemplate = `
+				<style>
+					* {
+						padding: 0px;
+						margin: 0px;
+						border: 0px;
+						box-sizing: border-box;
+					}
+					/* Головний блок */
+					.fls-preloader{
+						pointer-events: none;
+						z-index: 1;
+						position: fixed;
+						width: 100%;
+						height: 100%;
+						top: 0;
+						left: 0;
+						display: flex;
+						justify-content:center;
+						align-items: center;
+						background-color: #2b2b2b;
+						opacity: 1;
+						transition: opacity 0.5s;
+					}
+					.loaded .fls-preloader {
+						opacity: 0;
+					}
+
+					/* Блок з елементами */
+					.fls-preloader__body{
+						padding: 0.93rem;
+						max-width: 31.25rem;
+						display: flex;
+						flex-direction: column;
+					}
+					/* Блок з лічильником */
+					.fls-preloader__counter{
+						font-size: 6rem;
+					}
+					@media (max-width:479.98px){
+						.fls-preloader__counter{
+	  						font-size: 4rem;
+						}
+					}
+					/* Прогресбар */
+					.fls-preloader__line{}
+					/* Лінія прогресбару */
+					.fls-preloader__line span{
+						display: inline-block;
+						transition: width 0.2s ease;
+						height: 0.3rem;
+						background-color: #A259FF;
+					}
+					.lock body{
+						overflow: hidden;
+						touch-action: none;
+						overscroll-behavior: none;
+					}
+					.loading body>*:not(.fls-preloader){
+						opacity: 0;
+						visibility: hidden;
+					}
+					.loaded body>*:not(.fls-preloader){
+						transition: opacity 0.5s ease 0s, visibility 0.5s ease 0s;
+						opacity: 1;
+						visibility: visible;
+					}
+				</style>`;
+
+					document.head.insertAdjacentHTML("beforeend", preloaderStyleTemplate);
+
+					const preloaderTemplate = `
+					<div class="fls-preloader">
+						<div class="fls-preloader__body">
+							<div class="fls-preloader__counter">0%</div>
+							<div class="fls-preloader__line"><span></span></div>
+						</div>
+					</div>`;
+					document.body.insertAdjacentHTML("beforeend", preloaderTemplate);
+
+					const
+						preloader = document.querySelector('.fls-preloader'),
+						showPecentLoad = document.querySelector('.fls-preloader__counter'),
+						showLineLoad = document.querySelector('.fls-preloader__line span'),
+						htmlDocument = document.documentElement;
+
+					let imagesLoadedCount = counter = progress = 0;
+
+					htmlDocument.classList.add('loading');
+					htmlDocument.classList.add('lock');
+
+					preloaderImages.forEach(preloaderImage => {
+						const imgClone = document.createElement('img');
+						if (imgClone) {
+							imgClone.onload = imageLoaded;
+							imgClone.onerror = imageLoaded;
+							preloaderImage.dataset.src ? imgClone.src = preloaderImage.dataset.src : imgClone.src = preloaderImage.src;
+						}
+					});
+
+					function setValueProgress(progress) {
+						showPecentLoad ? showPecentLoad.innerText = `${progress}%` : null;
+						showLineLoad ? showLineLoad.style.width = `${progress}%` : null;
+					}
+					showPecentLoad ? setValueProgress(progress) : null;
+
+					function imageLoaded() {
+						imagesLoadedCount++;
+						progress = Math.round((100 / preloaderImages.length) * imagesLoadedCount);
+						const intervalId = setInterval(() => {
+							counter >= progress ? clearInterval(intervalId) : setValueProgress(++counter);
+							counter >= 100 ? addLoadedClass() : null;
+						}, 10);
+					}
+
+					function addLoadedClass() {
+						htmlDocument.classList.add('loaded');
+						htmlDocument.classList.remove('lock');
+						htmlDocument.classList.remove('loading');
+						setInterval(() => {
+							preloader.remove();
+							preloaderContainer.remove();
+						}, 500);
+					}
+				} else {
+					preloaderContainer.remove();
+				}
+			}
+			preloader();
+		</script>
+	</div>
+	<script src="js/app.min.js?_v=20241217192124"></script>
+</body>
+
+</html>
